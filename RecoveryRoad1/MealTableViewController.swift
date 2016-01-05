@@ -31,13 +31,13 @@ class MealTableViewController: UITableViewController {
 
     func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")!
-        let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4)!
+        let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4, ratingProtein: 1, ratingMilk: 1, ratingGrain: 1, ratingVeg: 1, ratingFruit: 1, ratingFat: 1, ratingDessert: 1)!
         
         let photo2 = UIImage(named: "meal2")!
-        let meal2 = Meal(name: "Chicken and Potatoes", photo: photo2, rating: 5)!
+        let meal2 = Meal(name: "Chicken and Potatoes", photo: photo2, rating: 5, ratingProtein: 2, ratingMilk: 2, ratingGrain: 2, ratingVeg: 2, ratingFruit: 2, ratingFat: 2, ratingDessert: 2)!
         
         let photo3 = UIImage(named: "meal3")!
-        let meal3 = Meal(name: "Pasta with Meatballs", photo: photo3, rating: 3)!
+        let meal3 = Meal(name: "Pasta with Meatballs", photo: photo3, rating: 3, ratingProtein: 3, ratingMilk: 3, ratingGrain: 3, ratingVeg: 3, ratingFruit: 3, ratingFat: 3, ratingDessert: 3)!
         
         meals += [meal1, meal2, meal3]
     }
@@ -71,7 +71,14 @@ class MealTableViewController: UITableViewController {
         cell.nameLabel.text = meal.name
         cell.photoImageView.image = meal.photo
         cell.ratingControl.rating = meal.rating
-
+        cell.ratingProtein.ratingProtein = meal.ratingProtein
+        cell.ratingMilk.ratingMilk = meal.ratingMilk
+        cell.ratingGrain.ratingGrain = meal.ratingGrain
+        cell.ratingVeg.ratingVeg = meal.ratingVeg
+        cell.ratingFruit.ratingFruit = meal.ratingFruit
+        cell.ratingFat.ratingFat = meal.ratingFat
+        cell.ratingDessert.ratingDessert = meal.ratingDessert
+        
         return cell
     }
     

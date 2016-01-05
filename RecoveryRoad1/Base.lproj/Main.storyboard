@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9m5-9R-n2G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9m5-9R-n2G">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -11,43 +11,72 @@
         <scene sceneID="2jq-di-2BW">
             <objects>
                 <tableViewController id="IYK-Ij-cgy" customClass="MealTableViewController" customModule="RecoveryRoad1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="gts-u3-olq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="161" sectionHeaderHeight="28" sectionFooterHeight="28" id="gts-u3-olq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="d8f-FS-Bao" customClass="MealTableViewCell" customModule="RecoveryRoad1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="161" id="d8f-FS-Bao" customClass="MealTableViewCell" customModule="RecoveryRoad1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="161"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8f-FS-Bao" id="GX5-UD-5y9">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="160.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="JLe-YK-roM">
                                             <rect key="frame" x="0.0" y="-19" width="102" height="128"/>
-                                            <animations/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6d-BM-1sv">
-                                            <rect key="frame" x="110" y="8" width="482" height="21"/>
-                                            <animations/>
+                                            <rect key="frame" x="110" y="0.0" width="400" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTN-0U-alH" customClass="RatingControl" customModule="RecoveryRoad1" customModuleProvider="target">
-                                            <rect key="frame" x="110" y="37" width="240" height="44"/>
-                                            <animations/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z8G-rf-3Vt" customClass="RatingFruit" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="110" y="45" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTN-0U-alH" customClass="RatingControl" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="110" y="22" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-Fm-O4Q" customClass="RatingDessert" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="110" y="93" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36N-Df-XAp" customClass="RatingProtein" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="268" y="22" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-Yq-clc" customClass="RatingGrain" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="268" y="45" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmA-8j-iHO" customClass="RatingMilk" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="110" y="70" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Txz-FD-N27" customClass="RatingVeg" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="268" y="70" width="150" height="22"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAS-bd-WCv" customClass="RatingFat" customModule="RecoveryRoad1">
+                                            <rect key="frame" x="268" y="93" width="150" height="22"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <outlet property="nameLabel" destination="a6d-BM-1sv" id="f9h-Pm-1rY"/>
                                     <outlet property="photoImageView" destination="JLe-YK-roM" id="5Ak-4g-2LJ"/>
                                     <outlet property="ratingControl" destination="vTN-0U-alH" id="KQr-5k-R5M"/>
+                                    <outlet property="ratingDessert" destination="OdM-Fm-O4Q" id="nKm-Bz-5dK"/>
+                                    <outlet property="ratingFat" destination="mAS-bd-WCv" id="4op-z3-7cV"/>
+                                    <outlet property="ratingFruit" destination="Z8G-rf-3Vt" id="fBl-91-eCQ"/>
+                                    <outlet property="ratingGrain" destination="0E1-Yq-clc" id="AM9-b6-6Js"/>
+                                    <outlet property="ratingMilk" destination="zmA-8j-iHO" id="NTa-c3-UHW"/>
+                                    <outlet property="ratingProtein" destination="36N-Df-XAp" id="svA-bh-EfP"/>
+                                    <outlet property="ratingVeg" destination="Txz-FD-N27" id="TGf-Py-zeg"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="nTw-ds-99w"/>
                                 </connections>
                             </tableViewCell>
@@ -81,18 +110,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-wF-6ef">
-                                <rect key="frame" x="20" y="80" width="560" height="418"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-wF-6ef">
+                                <rect key="frame" x="20" y="110" width="560" height="512"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UTe-oF-OlK">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                    </textField>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="kidsHandsPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-48-mxg">
-                                        <rect key="frame" x="120" y="42" width="320" height="320"/>
-                                        <animations/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="kidsHandsPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-48-mxg">
+                                        <rect key="frame" x="160" y="0.0" width="240" height="240"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="cWa-48-mxg" secondAttribute="height" multiplier="1:1" id="Yoo-xD-n78"/>
@@ -101,20 +123,46 @@
                                             <outletCollection property="gestureRecognizers" destination="Hcx-zM-FBM" appends="YES" id="OAT-5X-Pds"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-7B-3cV" customClass="RatingControl" customModule="RecoveryRoad1" customModuleProvider="target">
-                                        <rect key="frame" x="160" y="374" width="240" height="44"/>
-                                        <animations/>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-r4-KKm" customClass="RatingProtein" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="250" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-Ve-rqe" customClass="RatingVeg" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="284" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-dh-GMY" customClass="RatingFruit" customModule="RecoveryRoad1" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="318" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="v3s-Y8-FLt" customClass="RatingMilk" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="352" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="8Ov-Wk-YBM" customClass="RatingFat" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="386" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-82-sWV" customClass="RatingDessert" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="420" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="zo6-n2-EgI" customClass="RatingGrain" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="454" width="240" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="24" translatesAutoresizingMaskIntoConstraints="NO" id="FI0-we-2oH" customClass="RatingControl" customModule="RecoveryRoad1">
+                                        <rect key="frame" x="160" y="488" width="240" height="24"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstItem="UTe-oF-OlK" firstAttribute="leading" secondItem="Ji9-wF-6ef" secondAttribute="leading" id="6Le-VV-Gvd"/>
-                                    <constraint firstAttribute="trailing" secondItem="UTe-oF-OlK" secondAttribute="trailing" id="Z7t-TR-3is"/>
-                                </constraints>
                             </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UTe-oF-OlK">
+                                <rect key="frame" x="20" y="64" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Ji9-wF-6ef" secondAttribute="trailing" id="PoX-D5-Arl"/>
@@ -137,7 +185,14 @@
                     <connections>
                         <outlet property="nameTextField" destination="UTe-oF-OlK" id="w8Q-bm-hbI"/>
                         <outlet property="photoImageView" destination="cWa-48-mxg" id="HCa-OY-Mu0"/>
-                        <outlet property="ratingControl" destination="9U6-7B-3cV" id="lxm-Cu-BWH"/>
+                        <outlet property="ratingControl" destination="FI0-we-2oH" id="PWQ-4n-FsV"/>
+                        <outlet property="ratingDessert" destination="qEV-82-sWV" id="Kr7-o3-oko"/>
+                        <outlet property="ratingFat" destination="8Ov-Wk-YBM" id="kaN-bw-Oam"/>
+                        <outlet property="ratingFruit" destination="xLa-dh-GMY" id="Le0-fo-czd"/>
+                        <outlet property="ratingGrain" destination="zo6-n2-EgI" id="hUq-rd-PG1"/>
+                        <outlet property="ratingMilk" destination="v3s-Y8-FLt" id="HtY-B9-tXJ"/>
+                        <outlet property="ratingProtein" destination="dlq-r4-KKm" id="pbt-3k-7Mv"/>
+                        <outlet property="ratingVeg" destination="mEO-Ve-rqe" id="8sq-dr-USi"/>
                         <outlet property="saveButton" destination="les-RJ-2SU" id="zHl-KU-kdQ"/>
                     </connections>
                 </viewController>
@@ -159,7 +214,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g04-Rv-Cbz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -178,7 +232,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3p1-FC-cIb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

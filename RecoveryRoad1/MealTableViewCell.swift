@@ -17,6 +17,20 @@ class MealTableViewCell: UITableViewCell {
     @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var ratingControl: RatingControl!
+   
+    @IBOutlet weak var ratingFruit: RatingFruit!
+    
+    @IBOutlet weak var ratingMilk: RatingMilk!
+    
+    @IBOutlet weak var ratingDessert: RatingDessert!
+    
+    @IBOutlet weak var ratingProtein: RatingProtein!
+    
+    @IBOutlet weak var ratingGrain: RatingGrain!
+    
+    @IBOutlet weak var ratingVeg: RatingVeg!
+    
+    @IBOutlet weak var ratingFat: RatingFat!
     
     override func awakeFromNib() {
         super.awakeFromNib()

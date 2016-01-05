@@ -18,6 +18,13 @@
 		2E0C72161C1BB2790068E22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0C72151C1BB2790068E22C /* Assets.xcassets */; };
 		2E0C72191C1BB2790068E22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0C72171C1BB2790068E22C /* LaunchScreen.storyboard */; };
 		2E0C72241C1BB2790068E22C /* RecoveryRoad1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0C72231C1BB2790068E22C /* RecoveryRoad1Tests.swift */; };
+		2E1ACB571C275FF3005E05BD /* RatingVeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ACB561C275FF3005E05BD /* RatingVeg.swift */; };
+		2E1ACB591C277734005E05BD /* RatingGrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ACB581C277734005E05BD /* RatingGrain.swift */; };
+		2E1ACB5B1C277748005E05BD /* RatingMilk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ACB5A1C277748005E05BD /* RatingMilk.swift */; };
+		2E1ACB5D1C277767005E05BD /* RatingProtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ACB5C1C277767005E05BD /* RatingProtein.swift */; };
+		2E1ACB5F1C277783005E05BD /* RatingFat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ACB5E1C277783005E05BD /* RatingFat.swift */; };
+		2E1ACB611C277EE5005E05BD /* RatingDessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ACB601C277EE5005E05BD /* RatingDessert.swift */; };
+		2ED3AEA31C2737D400FC6C81 /* RatingFruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED3AEA21C2737D400FC6C81 /* RatingFruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		2E0C721F1C1BB2790068E22C /* RecoveryRoad1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecoveryRoad1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0C72231C1BB2790068E22C /* RecoveryRoad1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryRoad1Tests.swift; sourceTree = "<group>"; };
 		2E0C72251C1BB2790068E22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1ACB561C275FF3005E05BD /* RatingVeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingVeg.swift; sourceTree = "<group>"; };
+		2E1ACB581C277734005E05BD /* RatingGrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingGrain.swift; sourceTree = "<group>"; };
+		2E1ACB5A1C277748005E05BD /* RatingMilk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingMilk.swift; sourceTree = "<group>"; };
+		2E1ACB5C1C277767005E05BD /* RatingProtein.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingProtein.swift; sourceTree = "<group>"; };
+		2E1ACB5E1C277783005E05BD /* RatingFat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingFat.swift; sourceTree = "<group>"; };
+		2E1ACB601C277EE5005E05BD /* RatingDessert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingDessert.swift; sourceTree = "<group>"; };
+		2ED3AEA21C2737D400FC6C81 /* RatingFruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingFruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +107,16 @@
 				2E07CF101C1DE91E006CA45B /* MealTableViewController.swift */,
 				2E07CF0E1C1DDD52006CA45B /* MealTableViewCell.swift */,
 				2E07CF091C1CCA12006CA45B /* RatingControl.swift */,
+				2ED3AEA21C2737D400FC6C81 /* RatingFruit.swift */,
 				2E0C72151C1BB2790068E22C /* Assets.xcassets */,
 				2E0C72171C1BB2790068E22C /* LaunchScreen.storyboard */,
 				2E0C721A1C1BB2790068E22C /* Info.plist */,
+				2E1ACB561C275FF3005E05BD /* RatingVeg.swift */,
+				2E1ACB601C277EE5005E05BD /* RatingDessert.swift */,
+				2E1ACB581C277734005E05BD /* RatingGrain.swift */,
+				2E1ACB5A1C277748005E05BD /* RatingMilk.swift */,
+				2E1ACB5C1C277767005E05BD /* RatingProtein.swift */,
+				2E1ACB5E1C277783005E05BD /* RatingFat.swift */,
 			);
 			path = RecoveryRoad1;
 			sourceTree = "<group>";
@@ -211,11 +232,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E07CF0C1C1D05DB006CA45B /* Meal.swift in Sources */,
+				2E1ACB571C275FF3005E05BD /* RatingVeg.swift in Sources */,
+				2E1ACB5D1C277767005E05BD /* RatingProtein.swift in Sources */,
 				2E0C72111C1BB2790068E22C /* MealViewController.swift in Sources */,
 				2E07CF0A1C1CCA12006CA45B /* RatingControl.swift in Sources */,
 				2E0C720F1C1BB2790068E22C /* AppDelegate.swift in Sources */,
+				2E1ACB5F1C277783005E05BD /* RatingFat.swift in Sources */,
+				2ED3AEA31C2737D400FC6C81 /* RatingFruit.swift in Sources */,
+				2E1ACB611C277EE5005E05BD /* RatingDessert.swift in Sources */,
 				2E07CF111C1DE91E006CA45B /* MealTableViewController.swift in Sources */,
 				2E07CF0F1C1DDD52006CA45B /* MealTableViewCell.swift in Sources */,
+				2E1ACB591C277734005E05BD /* RatingGrain.swift in Sources */,
+				2E1ACB5B1C277748005E05BD /* RatingMilk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
